@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+<title>Flexbox/CSS Grid Puzzle</title>
+<style>
+.grid-container {
+display: grid;
+grid-template-areas:
+"info"
+"puzzle"
+"date" ;
+grid-row-gap: 20px;
+max-width: 640;
+margin: 40px auto;
+font-family: Arial, sans-serif;
+}
+.info { grid-area: info; background: #eef7ff; padding: 12px; border-radius: 6px; border: 1px solid #99x; }
+.puzzle { grid-area: puzzle; }
+.date { grid-area: date; text-align: center; color: #555; font-size: 0.9em; }
+
+.puzzle {
+display: flex;
+flex-wrap: wrap;
+width: 600px;
+margin: 0 auto;
+background: #fafafa;
+border: 2px solid #888;
+padding: 8px;
+border-radius: 4px;
+}
+.puzzle img {
+width: 25%;
+}
+
+.faulty {
+display: none;
+}
+
+.piece-A { order: 1; }
+.piece-B { order: 2; }
+.piece-C { order: 3; }
+.piece-D { order: 4; }
+.piece-E { order: 5; }
+.piece-F { order: 6; }
+.piece-G { order: 7; }
+.piece-H { order: 8; }
+.piece-I { order: 9; }
+.piece-J { order: 10; }
+.piece-L { order: 11; }
+.piece-M { order: 12; }
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+
+<div class="info">
+<h2>Mckensi Lichtenwalner</h2>
+<p>Puzzle Chosen: Snowmen</p>
+</div>
+
+<div class="puzzle">
+<img src="images/puzzle/puzzle2_A.png" alt="Piece A" class="piece-A">
+<img src="images/puzzle/puzzle2_B.png" alt="Piece B" class="piece-B">
+<img src="images/puzzle/puzzle2_C.png" alt="Piece C" class="piece-C">
+<img src="images/puzzle/puzzle2_D.png" alt="Piece D" class="piece-D">
+<img src="images/puzzle/puzzle2_E.png" alt="Piece E" class="piece-E">
+<img src="images/puzzle/puzzle2_F.png" alt="Piece F" class="piece-F">
+<img src="images/puzzle/puzzle2_G.png" alt="Piece G" class="piece-G">
+<img src="images/puzzle/puzzle2_H.png" alt="Piece H" class="piece-H">
+<img src="images/puzzle/puzzle2_I.png" alt="Piece I" class="piece-I">
+<img src="images/puzzle/puzzle2_J.png" alt="Piece J" class="piece-J">
+<img src="images/puzzle/puzzle2_K.png" alt="Faulty piece" class="piece-faulty">
+<img src="images/puzzle/puzzle2_L.png" alt="Piece L" class="piece-L">
+<img src="images/puzzle/puzzle2_M.png" alt="Piece M" class="piece-M">
+</div>
+
+<div class="date">
+Complete on: May 27, 2025
+</div>
+</div>
+</body>
+</html>
