@@ -1,0 +1,31 @@
+.scorecard {
+border-collapse: collapse;
+width: 90%;
+margin: 1rem auto;
+font-family: sans-serif;
+}
+
+.scorecard thead th {
+background color: #2c3e50;
+color: white;
+padding: 0.5rem;
+}
+
+.scorecard td {
+border: 1 px solid #444;
+padding: 0.5rem;
+text-align: center;
+}
+
+.scorecard tbody tr: nth-child(even) {
+background-color:#ecf0f1;
+}
+
+.scorecard tbody tr:hover {
+background-color: #d0d7de;
+}
+
+.scorecard tfoot td {
+font-weight: bold;
+background-color: #bdc3c7;
+}
