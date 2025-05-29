@@ -83,7 +83,7 @@ opacity 0.4s ease;
 
 .card:hover .answer {
 max-height: 200px;
-opactiy: 1;
+opacity: 1;
 }
 
 .card:hover {
