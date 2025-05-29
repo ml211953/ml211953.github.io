@@ -1,0 +1,93 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+background: #f2f7fa;
+font-family: Arial, sans-serif;
+color: #333;
+padding: 2rem;
+text-align: center;
+}
+
+h1 {
+font-size: 2.5rem;
+margin-bottom: 1.5rem;
+opacity: 0;
+animation: slideDown 0.6s ease-out forwards;
+}
+
+@keyframes slideDown {
+from {
+opacity: 0;
+transform: translateY(-30px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.cards-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 1rem;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+.card {
+background: #fff;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+padding: 1rem;
+position: relative;
+overflow: hidden;
+
+opacity: 0;
+transform: translateY(20px);
+animation: fadeInUp 0.5s ease-out forward;
+}
+
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.3s; }
+.card:nth-child(3) { animation-delay: 0.4s; }
+.card:nth-child(4) { animation-delay: 0.5s; }
+.card:nth-child(5) { animation-delay: 0.6s; }
+.card:nth-child(6) { animation-delay: 0.7s; }
+.card:nth-child(7) { animation-delay: 0.8s; }
+.card:nth-child(8) { animation-delay: 0.9s; }
+
+@keyframes fadeInUp {
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.card .question {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+.card .answer {
+max-height: 0;
+opacity: 0;
+overflow: hidden;
+transition:
+max-height 0.4s ease;
+opacity 0.4s ease;
+}
+
+.card:hover .answer {
+max-height: 200px;
+opactiy: 1;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+transition: box-shadow 0.3s ease, tranform 0.3s ease;
+}
