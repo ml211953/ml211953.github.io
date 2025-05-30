@@ -1,0 +1,53 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; line-height: 1.6; color= #333; }
+a { color: #0066cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header {
+display: flex; align-items: center; justify-content: space-between;
+background: #262526; padding: 1rem 2rem;
+}
+.logo { max-heigh: 50px; }
+.nav-list { list-style: none; display: flex; gap: 1rem; }
+.nav-list { font-weight: bold; }
+
+.hero { text-align: center; padding: 2rem; }
+.hero-img { max-width: 100%; height: auto; margin: 1rem 0; }
+
+.nested-list { margin-left: 1rem; }
+.nested-list { margin-bottom: .5rem; }
+.service-list { list-style: none; padding-left: 0; }
+.service-list { margin: .5rem 0; }
+
+table {
+width: 100%; border-collapse: collapse; margin: 1rem 0;
+}
+th, td { border: 1px solid #aaa; padding: .5rem; }
+thead { background: #ddd; }
+tfoot td { font-style: italic; text-align: center; }
+
+.grid-gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+gap: 1rem; margin: 1rem 0;
+}
+.grid-gallery img { width: 100%; height: auto; }
+.grid-gallery figcaption { text-align: center; margin-top: .5rem; }
+
+form {
+max-width: 400px; margin: 1rem auto;
+display: flex; flex-direction: column; gap: .75rem;
+}
+label { font-weight: bold; }
+input, select, textarea, button {
+padding: .5rem; border: 1px solid #ccc; border-radius: 4px;
+}
+button { cursor: pointer; }
+
+footer {
+background: #f4f4f4; text-align: center; padding: 1rem;
+margin-top: 2rem; font-size: .9rem;
+}
+
+
+
